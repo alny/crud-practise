@@ -1,0 +1,26 @@
+    <div class="container">
+
+         <!-- Marketing Icons Section -->
+     <div class="row">
+         <div class="col-lg-12">
+             <h1 class="page-header">
+                 Welcome to A Modern CRUD App
+             </h1>
+         </div>
+         {{#each person}}
+         <div class="col-md-4">
+             <div class="panel panel-default">
+                 <div class="panel-heading">
+                     <h4><a href="/details?id={{ _id }}"><i class="fa fa-fw fa-check"></i>{{name}}</h4></a>
+                 </div>
+                 <div class="panel-body">
+                     <p>{{age}}</p>
+                     <a href="/delete/{{ _id }}" class="btn btn-default">{{location}}</a>
+                 </div>
+             </div>
+         </div>
+         {{/each}}
+       </div>
+     <!-- /.row -->
+
+        </div>
